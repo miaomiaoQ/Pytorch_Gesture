@@ -21,7 +21,7 @@
       <file leaf-file-name="mnist.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../pytorch_gesture/mnist.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1462">
+            <state relative-caret-position="0">
               <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
               <folding>
                 <element signature="e#224#233#0" expanded="true" />
@@ -42,38 +42,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gesture_cnn.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../pytorch_gesture/gesture_cnn.py">
+      <file leaf-file-name="GestureWithCnn.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../pytorch_gesture/GestureWithCnn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="77" column="7" lean-forward="true" selection-start-line="77" selection-start-column="7" selection-end-line="77" selection-end-column="7" />
+            <state relative-caret-position="68">
+              <caret line="4" column="29" lean-forward="false" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GestureWithLstm.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../pytorch_gesture/GestureWithLstm.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-563">
+              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding>
-                <element signature="e#21#55#0" expanded="true" />
+                <element signature="e#21#50#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gesture_lstm.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../pytorch_gesture/gesture_lstm.py">
+      <file leaf-file-name="Gesture_LSTM.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../pytorch_gesture/Gesture_LSTM.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="44" column="12" lean-forward="false" selection-start-line="44" selection-start-column="12" selection-end-line="44" selection-end-column="12" />
-              <folding>
-                <element signature="e#21#55#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="datasetutils.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../pytorch_gesture/datasetutils.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-255">
-              <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
-              <folding>
-                <element signature="e#21#62#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="68">
+              <caret line="4" column="55" lean-forward="false" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -99,8 +95,11 @@
         <option value="$PROJECT_DIR$/mnist2.py" />
         <option value="$PROJECT_DIR$/datasetutils.py" />
         <option value="$PROJECT_DIR$/gesture.py" />
-        <option value="$PROJECT_DIR$/../pytorch_gesture/gesture_cnn.py" />
         <option value="$PROJECT_DIR$/../pytorch_gesture/gesture_lstm.py" />
+        <option value="$PROJECT_DIR$/../pytorch_gesture/CNN.py" />
+        <option value="$PROJECT_DIR$/../pytorch_gesture/gesture_cnn.py" />
+        <option value="$PROJECT_DIR$/../pytorch_gesture/Gesture_LSTM.py" />
+        <option value="$PROJECT_DIR$/../pytorch_gesture/GestureWithLstm.py" />
       </list>
     </option>
   </component>
@@ -214,7 +213,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="pytorch_gesture" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../pytorch_gesture/gesture_lstm.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../pytorch_gesture/GestureWithLstm.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -363,7 +362,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09707242" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32819724" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23680352" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23645681" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20512821" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -412,13 +411,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../pytorch_gesture/gesture_cnn.py">
+    <entry file="file://$PROJECT_DIR$/../pytorch_gesture/GestureWithCnn.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="20" />
-          <folding>
-            <element signature="e#21#55#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -452,13 +449,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../pytorch_gesture/gesture_cnn.py">
+    <entry file="file://$PROJECT_DIR$/../pytorch_gesture/GestureWithCnn.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1495">
           <caret line="69" column="12" lean-forward="false" selection-start-line="69" selection-start-column="12" selection-end-line="69" selection-end-column="12" />
-          <folding>
-            <element signature="e#21#55#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -501,7 +496,7 @@
     <entry file="file://$USER_HOME$/.local/lib/python3.5/site-packages/torch/nn/modules/pooling.py" />
     <entry file="file://$PROJECT_DIR$/../pytorch_gesture/mnist.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1462">
+        <state relative-caret-position="0">
           <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
           <folding>
             <element signature="e#224#233#0" expanded="true" />
@@ -528,6 +523,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../pytorch_gesture/Gesture_CNN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-498">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../pytorch_gesture/GestureWithCnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="29" lean-forward="false" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../pytorch_gesture/datasetutils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-255">
@@ -538,22 +549,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../pytorch_gesture/gesture_cnn.py">
+    <entry file="file://$PROJECT_DIR$/../pytorch_gesture/Gesture_LSTM.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="77" column="7" lean-forward="true" selection-start-line="77" selection-start-column="7" selection-end-line="77" selection-end-column="7" />
-          <folding>
-            <element signature="e#21#55#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="4" column="55" lean-forward="false" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../pytorch_gesture/gesture_lstm.py">
+    <entry file="file://$PROJECT_DIR$/../pytorch_gesture/GestureWithLstm.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="44" column="12" lean-forward="false" selection-start-line="44" selection-start-column="12" selection-end-line="44" selection-end-column="12" />
+        <state relative-caret-position="-563">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
-            <element signature="e#21#55#0" expanded="true" />
+            <element signature="e#21#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
