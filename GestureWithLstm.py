@@ -1,4 +1,5 @@
 # -*-coding:utf-8-*-
+from Gesture_CNN import CNN
 from Gesture_LSTM import LSTM
 from datasetutils import MyDataset
 from torchvision import transforms, utils
@@ -18,9 +19,12 @@ train_data = MyDataset(path='/home/dmrf/文档/Gesture/New_Data/持续时间为1
 train_loader = DataLoader(dataset=train_data, batch_size=64, shuffle=True)
 test_loader = DataLoader(dataset=test_data, batch_size=32)
 
-model = LSTM()
-model.cuda()
-print(model)
+
+cnn = CNN()
+cnn.cuda()
+
+lstm = LSTM()
+lstm.cuda()
 
 LR=0.001
 EPOCH=10
