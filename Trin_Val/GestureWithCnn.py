@@ -1,15 +1,10 @@
 # -*-coding:utf-8-*-
-from Gesture_CNN import CNN
-from Gesture_LSTM import LSTM
-from datasetutils import MyDataset
-from torchvision import transforms, utils
-from torch.utils.data import Dataset, DataLoader
+from Net.Gesture_CNN import CNN
+from Utils.DataSetUtils import MyDataset
+from torchvision import transforms
+from torch.utils.data import  DataLoader
 import torch
-from torch import nn
 from torch.autograd import Variable
-
-TIME_STEP = 8         # rnn time step / image height
-INPUT_SIZE = 550         # rnn input size / image width
 
 test_data = MyDataset(path='/home/dmrf/文档/Gesture/New_Data/持续时间为1s的复杂手势/Test_5', transform=transforms.ToTensor())
 train_data = MyDataset(path='/home/dmrf/文档/Gesture/New_Data/持续时间为1s的复杂手势/Train_5', transform=transforms.ToTensor())
@@ -20,14 +15,12 @@ train_loader = DataLoader(dataset=train_data, batch_size=64, shuffle=True)
 test_loader = DataLoader(dataset=test_data, batch_size=32)
 
 
-cnn = CNN()
-cnn.cuda()
-
-lstm = LSTM()
-lstm.cuda()
+model = CNN()
+model.cuda()
+print(model)
 
 LR=0.001
-EPOCH=10
+EPOCH=1
 
 optimizer = torch.optim.Adam(model.parameters(),lr=LR)
 loss_func = torch.nn.CrossEntropyLoss()

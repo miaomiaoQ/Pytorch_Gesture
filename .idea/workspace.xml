@@ -18,80 +18,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="mnist.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../pytorch_gesture/mnist.py">
+      <file leaf-file-name="GestureWithCnn.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../pytorch_gesture/Trin_Val/GestureWithCnn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
-              <folding>
-                <element signature="e#224#233#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mnist2.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../pytorch_gesture/mnist2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="969">
-              <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="61" selection-end-column="39" />
-              <folding>
-                <element signature="e#96#108#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GestureWithCnn.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../pytorch_gesture/GestureWithCnn.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
+            <state relative-caret-position="476">
               <caret line="28" column="26" lean-forward="false" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="26" />
               <folding>
-                <element signature="e#21#48#0" expanded="true" />
+                <element signature="e#21#52#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GestureWithLstm.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../pytorch_gesture/GestureWithLstm.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding>
-                <element signature="e#21#48#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Gesture_LSTM.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../pytorch_gesture/Gesture_LSTM.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="38" lean-forward="false" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Gesture_CNN_LSTM.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../pytorch_gesture/Gesture_CNN_LSTM.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1088">
-              <caret line="64" column="20" lean-forward="false" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Gesture_CNN.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../pytorch_gesture/Gesture_CNN.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="45" column="36" lean-forward="true" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -161,6 +95,11 @@
               <item name="pytorch_mnist" type="b2602c69:ProjectViewProjectNode" />
               <item name="pytorch_gesture" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="pytorch_mnist" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pytorch_gesture" type="462c0819:PsiDirectoryNode" />
+              <item name="Trin_Val" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -171,6 +110,14 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../pytorch_gesture/Demo" />
+      <recent name="$PROJECT_DIR$/../pytorch_gesture/Trin_Val" />
+      <recent name="$PROJECT_DIR$/../pytorch_gesture/Net" />
+      <recent name="$PROJECT_DIR$/../pytorch_gesture/Utils" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -236,7 +183,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="pytorch_gesture" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../pytorch_gesture/GestureWithLstm.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../pytorch_gesture/Trin_Val/GestureWithLstm.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -414,7 +361,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../pytorch_gesture/mnist.py">
+    <entry file="file://$PROJECT_DIR$/../pytorch_gesture/Demo/mnist.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1462">
           <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
@@ -424,7 +371,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../pytorch_gesture/mnist2.py">
+    <entry file="file://$PROJECT_DIR$/../pytorch_gesture/Demo/mnist2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="969">
           <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="61" selection-end-column="39" />
@@ -434,17 +381,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../pytorch_gesture/GestureWithCnn.py">
+    <entry file="file://$PROJECT_DIR$/../pytorch_gesture/Trin_Val/GestureWithCnn.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="20" />
           <folding>
-            <element signature="e#21#48#0" expanded="true" />
+            <element signature="e#21#52#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../pytorch_gesture/datasetutils.py">
+    <entry file="file://$PROJECT_DIR$/../pytorch_gesture/Utils/DataSetUtils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
@@ -454,7 +401,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../pytorch_gesture/mnist.py">
+    <entry file="file://$PROJECT_DIR$/../pytorch_gesture/Demo/mnist.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1978">
           <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
@@ -464,7 +411,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../pytorch_gesture/mnist2.py">
+    <entry file="file://$PROJECT_DIR$/../pytorch_gesture/Demo/mnist2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1311">
           <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="61" selection-end-column="39" />
@@ -474,19 +421,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../pytorch_gesture/GestureWithCnn.py">
+    <entry file="file://$PROJECT_DIR$/../pytorch_gesture/Trin_Val/GestureWithCnn.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1495">
           <caret line="69" column="12" lean-forward="false" selection-start-line="69" selection-start-column="12" selection-end-line="69" selection-end-column="12" />
           <folding>
-            <element signature="e#21#48#0" expanded="true" />
+            <element signature="e#21#52#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.local/lib/python3.5/site-packages/torchvision/transforms/__init__.py" />
     <entry file="file://$USER_HOME$/.local/lib/python3.5/site-packages/torch/utils/data/dataset.py" />
-    <entry file="file://$PROJECT_DIR$/../pytorch_gesture/datasetutils.py">
+    <entry file="file://$PROJECT_DIR$/../pytorch_gesture/Utils/DataSetUtils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
           <caret line="28" column="0" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="28" selection-end-column="0" />
@@ -496,7 +443,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../pytorch_gesture/mnist.py">
+    <entry file="file://$PROJECT_DIR$/../pytorch_gesture/Demo/mnist.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1863">
           <caret line="81" column="15" lean-forward="false" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="15" />
@@ -507,7 +454,7 @@
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.local/lib/python3.5/site-packages/torch/utils/data/dataset.py" />
-    <entry file="file://$PROJECT_DIR$/../pytorch_gesture/datasetutils.py">
+    <entry file="file://$PROJECT_DIR$/../pytorch_gesture/Utils/DataSetUtils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
@@ -521,7 +468,7 @@
     <entry file="file://$USER_HOME$/.local/lib/python3.5/site-packages/torchvision/transforms/__init__.py" />
     <entry file="file://$USER_HOME$/.local/lib/python3.5/site-packages/torch/nn/modules/conv.py" />
     <entry file="file://$USER_HOME$/.local/lib/python3.5/site-packages/torch/nn/modules/pooling.py" />
-    <entry file="file://$PROJECT_DIR$/../pytorch_gesture/mnist.py">
+    <entry file="file://$PROJECT_DIR$/../pytorch_gesture/Demo/mnist.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
@@ -531,7 +478,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../pytorch_gesture/mnist2.py">
+    <entry file="file://$PROJECT_DIR$/../pytorch_gesture/Demo/mnist2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="969">
           <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="61" selection-end-column="39" />
@@ -550,7 +497,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../pytorch_gesture/datasetutils.py">
+    <entry file="file://$PROJECT_DIR$/../pytorch_gesture/Utils/DataSetUtils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-255">
           <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
@@ -560,27 +507,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../pytorch_gesture/GestureWithLstm.py">
+    <entry file="file://$PROJECT_DIR$/../pytorch_gesture/Trin_Val/GestureWithLstm.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
-            <element signature="e#21#48#0" expanded="true" />
+            <element signature="e#21#52#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../pytorch_gesture/GestureWithCnn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="28" column="26" lean-forward="false" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="26" />
-          <folding>
-            <element signature="e#21#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../pytorch_gesture/Gesture_CNN.py">
+    <entry file="file://$PROJECT_DIR$/../pytorch_gesture/Net/Gesture_CNN.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="45" column="36" lean-forward="true" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
@@ -588,7 +525,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../pytorch_gesture/Gesture_LSTM.py">
+    <entry file="file://$PROJECT_DIR$/../pytorch_gesture/Net/Gesture_LSTM.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="27" column="38" lean-forward="false" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
@@ -596,11 +533,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../pytorch_gesture/Gesture_CNN_LSTM.py">
+    <entry file="file://$PROJECT_DIR$/../pytorch_gesture/Net/Gesture_CNN_LSTM.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="64" column="20" lean-forward="false" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="20" />
+        <state relative-caret-position="-508">
+          <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../pytorch_gesture/Trin_Val/GestureWithCnn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="26" lean-forward="false" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="26" />
+          <folding>
+            <element signature="e#21#52#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
