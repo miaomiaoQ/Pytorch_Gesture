@@ -3,7 +3,11 @@ from datasetutils import MyDataset
 from torchvision import transforms, utils
 from torch.utils.data import Dataset, DataLoader
 import torch
+from torch import nn
 from torch.autograd import Variable
+
+TIME_STEP = 8         # rnn time step / image height
+INPUT_SIZE = 550         # rnn input size / image width
 
 test_data = MyDataset(path='/home/dmrf/文档/Gesture/New_Data/持续时间为1s的复杂手势/Test_5', transform=transforms.ToTensor())
 train_data = MyDataset(path='/home/dmrf/文档/Gesture/New_Data/持续时间为1s的复杂手势/Train_5', transform=transforms.ToTensor())
@@ -13,64 +17,32 @@ train_data = MyDataset(path='/home/dmrf/文档/Gesture/New_Data/持续时间为1
 train_loader = DataLoader(dataset=train_data, batch_size=64, shuffle=True)
 test_loader = DataLoader(dataset=test_data, batch_size=32)
 
-
-class Net(torch.nn.Module):
+class LSTM(nn.Module):
     def __init__(self):
-        super(Net, self).__init__()
-        self.conv1 = torch.nn.Sequential(
-            torch.nn.Conv2d(
-                in_channels=2,  # input height
-                out_channels=16,  # n_filters
-                kernel_size=(1, 7),  # filter size
-                stride=(1, 3),  # filter movement/step
-                padding=0
-            ),
-            torch.nn.ReLU(),
-            torch.nn.MaxPool2d(
-                kernel_size=(1, 2),  # filter size
-                stride=(1, 2),  # filter movement/step
-            ))
-        self.conv2 = torch.nn.Sequential(
-            torch.nn.Conv2d(in_channels=16,  # input height
-                            out_channels=32,  # n_filters
-                            kernel_size=(1, 5),  # filter size
-                            stride=(1, 2),  # filter movement/step
-                            padding=0),
-            torch.nn.ReLU(),
-            torch.nn.MaxPool2d(kernel_size=(1, 2),
-                               stride=(1, 2))
-        )
-        self.conv3 = torch.nn.Sequential(
-            torch.nn.Conv2d(in_channels=32,  # input height
-                            out_channels=64,  # n_filters
-                            kernel_size=(1, 4),  # filter size
-                            stride=(1, 2),  # filter movement/step
-                            padding=0),
-            torch.nn.ReLU(),
-            torch.nn.MaxPool2d(kernel_size=(1, 2),
-                               stride=(1, 2))
+        super(LSTM, self).__init__()
+
+        self.rnn = nn.LSTM(  # if use nn.RNN(), it hardly learns
+            input_size=INPUT_SIZE,
+            hidden_size=128,  # rnn hidden unit
+            num_layers=1,  # number of rnn layer
+            batch_first=True,  # input & output will has batch size as 1s dimension. e.g. (batch, time_step, input_size)
         )
 
-
-
-        self.dense = torch.nn.Sequential(
-            torch.nn.Linear(64 * 8 * 5, 128),
-            torch.nn.ReLU(),
-            torch.nn.Linear(128, 13)
-        )
+        self.out = nn.Linear(64, 13)
 
     def forward(self, x):
-        conv1_out = self.conv1(x)
-        #print(conv1_out.shape)
-        conv2_out = self.conv2(conv1_out)
-        #print(conv2_out.shape)
-        conv3_out = self.conv3(conv2_out)
-        #print(conv3_out.shape)
-        res = conv3_out.view(conv3_out.size(0), -1)
-        out = self.dense(res)
+        # x shape (batch, time_step, input_size)
+        # r_out shape (batch, time_step, output_size)
+        # h_n shape (n_layers, batch, hidden_size)
+        # h_c shape (n_layers, batch, hidden_size)
+        r_out, (h_n, h_c) = self.rnn(x, None)  # None represents zero initial hidden state
+
+        # choose r_out at the last time step
+        out = self.out(r_out[:, -1, :])
         return out
 
-model = Net()
+
+model = LSTM()
 model.cuda()
 print(model)
 
