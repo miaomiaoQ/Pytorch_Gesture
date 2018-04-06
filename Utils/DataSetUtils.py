@@ -8,6 +8,7 @@ import numpy as np
 import os
 
 
+
 def my_loader(path):
     files2 = os.listdir(path)
     if 'I' in files2[0]:
@@ -73,8 +74,6 @@ class MyDataset(Dataset):
             if type == 'O':
                 label = int(12)
 
-            if label == '':
-                continue
 
             datas.append((data_path,int(label)))
         self.imgs = datas

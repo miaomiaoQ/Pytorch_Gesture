@@ -5,7 +5,7 @@ from torchvision import transforms
 from torch.utils.data import  DataLoader
 import torch
 from torch.autograd import Variable
-
+import time
 test_data = MyDataset(path='/home/dmrf/文档/Gesture/New_Data/持续时间为1s的复杂手势/Test_5', transform=transforms.ToTensor())
 train_data = MyDataset(path='/home/dmrf/文档/Gesture/New_Data/持续时间为1s的复杂手势/Train_5', transform=transforms.ToTensor())
 
@@ -13,6 +13,7 @@ train_data = MyDataset(path='/home/dmrf/文档/Gesture/New_Data/持续时间为1
 
 train_loader = DataLoader(dataset=train_data, batch_size=64, shuffle=True)
 test_loader = DataLoader(dataset=test_data, batch_size=32)
+
 
 
 model = CNN()
@@ -32,11 +33,22 @@ for epoch in range(EPOCH):
     train_loss = 0.
     train_acc = 0.
     count=0
+    befor=0.0
+    after=0.0
+    befor = time.time()
     for batch_x, batch_y in train_loader:
+        after = time.time()
+        print('for expend time:' + str(after - befor) + 's')
         print('train :'+str(count*64))
         count+=1
         batch_x, batch_y = Variable(batch_x).cuda(), Variable(batch_y).cuda()
+
+
+        befor=time.time()
         out = model(batch_x)
+        after=time.time()
+        print('model expend time:'+str(after-befor)+'s')
+
         loss = loss_func(out, batch_y)
         train_loss += loss.data[0]
         pred = torch.max(out, 1)[1]
@@ -48,8 +60,8 @@ for epoch in range(EPOCH):
         if count%5==0:
             print('Train Loss: {:.6f}, Acc: {:.6f}'.format(train_loss / (len(
                 train_data)), train_acc / (len(train_data))))
-
-
+        befor = time.time()
+        print('afer model  expend time:' + str(befor - after) + 's')
 
     # evaluation--------------------------------
     model.eval()
