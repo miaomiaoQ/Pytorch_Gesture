@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/pytorch_gesture.iml" filepath="$PROJECT_DIR$/.idea/pytorch_gesture.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/pytorch_mnist.iml" filepath="$PROJECT_DIR$/.idea/pytorch_mnist.iml" />
     </modules>
   </component>
