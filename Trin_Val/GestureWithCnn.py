@@ -7,8 +7,6 @@ from torch.utils.data import DataLoader
 import torch
 from torch.autograd import Variable
 import time
-import sys
-
 test_data = MyDataset(path='/home/dmrf/文档/Gesture/New_Data/持续时间为1s的复杂手势/Test_5', transform=transforms.ToTensor())
 train_data = MyDataset(path='/home/dmrf/文档/Gesture/New_Data/持续时间为1s的复杂手势/Train_5', transform=transforms.ToTensor())
 
